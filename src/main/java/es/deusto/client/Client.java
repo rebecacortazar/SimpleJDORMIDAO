@@ -1,12 +1,11 @@
 package es.deusto.client;
 
-import java.rmi.RMISecurityManager;
+
 
 import es.deusto.server.data.Message;
 import es.deusto.server.data.User;
 import es.deusto.server.remote.IMessenger;
 
-@SuppressWarnings("deprecation")
 public class Client {
 
 	public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class Client {
 		}
 
 		if (System.getSecurityManager() == null) {
-			System.setSecurityManager(new RMISecurityManager());
+			System.setSecurityManager(new SecurityManager());
 		}
 
 		try {
