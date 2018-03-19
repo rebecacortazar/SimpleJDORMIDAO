@@ -1,7 +1,6 @@
 package es.deusto.server;
 
 import java.rmi.Naming;
-import java.rmi.RMISecurityManager;
 
 import es.deusto.server.remote.IMessenger;
 import es.deusto.server.remote.Messenger;
@@ -18,7 +17,7 @@ public class Server {
 		}
 
 		if (System.getSecurityManager() == null) {
-			System.setSecurityManager(new RMISecurityManager());
+			System.setSecurityManager(new SecurityManager());
 		}
 
 		String name = "//" + args[0] + ":" + args[1] + "/" + args[2];
