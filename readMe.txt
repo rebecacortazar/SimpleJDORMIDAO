@@ -1,3 +1,4 @@
+Testing a rebase
 - Start MySQL
 - Create MySQL schema using script
 
