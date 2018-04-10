@@ -5,9 +5,8 @@ import java.rmi.Naming;
 import es.deusto.server.remote.IMessenger;
 import es.deusto.server.remote.Messenger;
 
-@SuppressWarnings("deprecation")
-public class Server {
 
+public class Server {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
