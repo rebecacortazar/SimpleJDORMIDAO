@@ -27,6 +27,7 @@ import es.deusto.server.remote.Messenger;
  * @author cortazar
  * Testing of the Service Layer, mocking the DAO layer
  */
+// @Ignore
 @RunWith(MockitoJUnitRunner.class)  
 public class DAOMockTest {
 	
